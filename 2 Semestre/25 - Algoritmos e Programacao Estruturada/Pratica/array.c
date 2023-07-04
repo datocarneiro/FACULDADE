@@ -8,17 +8,23 @@ time.h: funções relacionadas ao tempo e data
 ctype.h: manipular caracteres, como verificações de letras maiúsculas/minúsculas e conversões.
 */
 
-#include<stdio.h>
-#include<string.h>
+
+#include <stdio.h>
+
 int main()
 {
-    system("cls"); // comando para limpar o terminal antes de compilar
+    int vetor[5]; // Declare o vetor com o tamanho desejado
 
-    char vetor [5][4] = {"seg", "ter","qua","qui","sex"};
-
-    for (int i = 0; i <5; ++i)
+    for (int i = 0; i < 5; ++i)
     {
-        printf("%s\n ", vetor[i]);
+        vetor[i] = i * 10; // Atribua um valor ao índice atual multiplicando-o por 10
+    }
+
+    printf("Valores do vetor:\n");
+
+    for (int i = 0; i < 5; ++i)
+    {
+        printf("%d\n", vetor[i]); // Imprima os valores do vetor
     }
 
     return 0;
