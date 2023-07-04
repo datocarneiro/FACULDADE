@@ -18,7 +18,7 @@ int main()
 
     for (int i = 0; i <5; ++i)
     {
-        printf("%s\n", vetor[i]);
+        printf("%s\n ", vetor[i]);
     }
 
     return 0;
