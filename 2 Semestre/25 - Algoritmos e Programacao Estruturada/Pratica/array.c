@@ -14,7 +14,7 @@ int main()
 {
     system("cls"); // comando para limpar o terminal antes de compilar
 
-    char vetor [5][2] = {"seg", "ter","qua","qui","sex"};
+    char vetor [5][4] = {"seg", "ter","qua","qui","sex"};
 
     for (int i = 0; i <5; ++i)
     {
