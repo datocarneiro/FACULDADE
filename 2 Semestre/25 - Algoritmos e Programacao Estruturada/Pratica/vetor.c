@@ -7,15 +7,18 @@ int main()
     {
         numeros[i] = (i + 1) * 100;
     }
-    printf("digite a posicao de 0 a 4:");
-    scanf("%d", &posicao);
-    if (posicao >=0  && posicao <=5)
+    while (posicao < 0 || posicao > 4)
     {
-        printf("%d\n", numeros[posicao]);
-    }
-    else
-    {
-        printf("número invalido");
+        printf("digite a posicao de 0 a 4:");
+        scanf("%d", &posicao);
+        if (posicao >=0  && posicao <=4)
+        {
+            printf("e o resultado é: %d\n", numeros[posicao]);
+        } 
+        else
+        {
+            printf("número invalido\n");
+        }
     }
     return 0;
 }
