@@ -2,11 +2,9 @@
 variavel é alteravel 
 constante não muda
 '''
+nome = "jonathas"
 
-numero = int(input('digite o numero:'))
-
-for i in range(11):
-    resultado = i * numero
-    print(f"{i} x {numero} = {resultado}")
+for i, c   in enumerate(nome):
+    print(f"({c}) esta no índice ({i})" )
     
 
