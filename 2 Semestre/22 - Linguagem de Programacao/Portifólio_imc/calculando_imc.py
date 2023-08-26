@@ -17,7 +17,7 @@ while True:
     imc = peso / (altura * altura)
     print(f'{nome}, seu IMC é: {imc:.2f}')
 
-    def Classificação_imc():
+    def classificação_imc():
         if imc < 17.00:
             return 'Muito abaixo do peso'
         elif imc <= 18.49:
@@ -33,8 +33,8 @@ while True:
         else:
             return 'Obesidade grau III (mórbida)'
 
-    Classificação_imc()
-    print(f'de acordo com o seu IMC, a classificação é considerada como: {Classificação_imc()}')
+    classificação_imc()
+    print(f'de acordo com o seu IMC, a classificação é considerada como: {classificação_imc()}')
 
     continuar = input('Continuar calculando? [S/N]:')
     if continuar in "Nn":
