@@ -15,3 +15,15 @@ Por exemplo: main(), printf(), somar() etc.
 * <retorno> – Quando o tipo de retorno for void esse parâmetro não
 precisa ser usado, porém, quando não for void é obrigatório. 
 */
+
+#include<stdio.h>
+int* gerarRandomico() {
+estático int r [10];
+interno;
+para (a = 0; a < 10; ++a)
+{ r[a] = rand();
+printf("r[%d] %d\n", a, r[a]);
+=
+}
+retornar r;
+}
